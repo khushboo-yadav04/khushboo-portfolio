@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khushboo Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="navbar">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>Khushboo Yadav</span>
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#certificates">Certificates</a></div>
+        <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div class="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home">
+    <div class="main-container">
+      <div class="image" data-aos="zoom-in-right" data-aos-duration="2000">
+        <img src="image.png.jpg" alt="Khushboo Yadav"/>
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Khushboo</span></h1>
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span id="typewriter-text"></span></div>
+        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1200">
+          I am a passionate developer and designer who enjoys transforming ideas into visually appealing and functional web experiences. I focus on building modern, responsive websites using clean code and creative design, aiming to create seamless and engaging user experiences.
+
+        </p>
+        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="600">
+          <a href="https://github.com/khushboo-yadav04" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/khushbooyadav01/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/khus_hbu0418?igsh=ZzdhZGw2a3Azenkw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+          <button id="downloadBtn"><i class="fa-solid fa-download"></i> Download CV</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="section-header" data-aos="fade-up">
+      <h2>About <span>Me</span></h2>
+      <p class="section-sub">Get to know me better</p>
+    </div>
+    <div class="about-container">
+      <div class="about-content" data-aos="fade-left" data-aos-duration="1200">
+        <h3>Who Am I?</h3>
+        <p>I am <strong>Khushboo Yadav</strong>, a Computer Science student and passionate frontend developer who loves building clean and responsive web applications. I enjoy combining creativity with logic to design user-friendly interfaces.</p>
+        <p>Along with web development, I am also exploring data science and machine learning. I’m always eager to learn and grow through real-world projects.</p>
+        <div class="about-info">
+          <div class="info-item"><i class="fa-solid fa-user"></i><span><b>Name:</b> Khushboo Yadav</span></div>
+          <div class="info-item"><i class="fa-solid fa-envelope"></i><span><b>Email:</b> ky898857@email.com</span></div>
+          <div class="info-item"><i class="fa-solid fa-location-dot"></i><span><b>Location:</b> India</span></div>
+          <div class="info-item"><i class="fa-solid fa-briefcase"></i><span><b>Available:</b> Freelance / Full-time</span></div>
+        </div>
+        <a href="#contact" class="about-btn">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="section-header" data-aos="fade-up">
+      <h2>My <span>Skills</span></h2>
+      <p class="section-sub">Technologies I work with</p>
+    </div>
+    <div class="skills-container">
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fa-brands fa-html5"></i>
+        <h4>HTML5</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+        <span>95%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h4>CSS3</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        <span>90%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fa-brands fa-js"></i>
+        <h4>JavaScript</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        <span>80%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fa-brands fa-python"></i>
+        <h4>Python</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        <span>85%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+        <i class="fa-solid fa-database"></i>
+        <h4>MySQL</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        <span>90%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h4>AI & Machine Learning</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+        <span>60%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+        <i class="fa-brands fa-git-alt"></i>
+        <h4>Git</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        <span>85%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h4>Deep Learning</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+        <span>60%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <i class="fa-brands fa-r-project"></i>
+        <h4>R</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        <span>70%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h4>NumPy & Pandas</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        <span>90%</span>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+        <i class="fa-solid fa-database"></i>
+        <h4>Data Visualization</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        <span>90%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-header" data-aos="fade-up">
+      <h2>My <span>Projects</span></h2>
+      <p class="section-sub">Things I've built</p>
+    </div>
+
+    <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="html">HTML/CSS</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="react">React</button>
+    </div>
+
+    <div class="projects-container">
+
+      <div class="project-card" data-category="html" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img" style="background: linear-gradient(135deg, rgb(109,67,0), rgb(200,140,60));"><i class="fa-solid fa-store"></i></div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+          <h3>Restaurant Landing Page</h3>
+          <p>A fully responsive restaurant website with hero section, menu cards, and contact form built with pure HTML & CSS.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);"><i class="fa-solid fa-list-check"></i></div>
+        <div class="project-body">
+          <div class="project-tags"><span>JavaScript</span><span>LocalStorage</span></div>
+          <h3>Todo List App</h3>
+          <p>A feature-rich todo app with add, delete, complete, and filter tasks — data saved in localStorage so it persists on refresh.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img" style="background: linear-gradient(135deg, #43cea2, #185a9d);"><i class="fa-solid fa-cloud-sun"></i></div>
+        <div class="project-body">
+          <div class="project-tags"><span>JavaScript</span><span>API</span></div>
+          <h3>Weather App</h3>
+          <p>Real-time weather using the OpenWeather API — shows temperature, humidity, wind speed, and weather condition for any city.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-img" style="background: linear-gradient(135deg, #61dafb, #21a9c9);"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="project-body">
+          <div class="project-tags"><span>React</span><span>CSS</span></div>
+          <h3>E-Commerce UI</h3>
+          <p>A modern product listing page in React with cart counter and category filter functionality.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);"><i class="fa-solid fa-id-card"></i></div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h3>Portfolio Website</h3>
+          <p>This very portfolio — built with AOS animations, typewriter effect, skill bars, and full mobile responsiveness.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-img" style="background: linear-gradient(135deg, #f953c6, #b91d73);"><i class="fa-solid fa-note-sticky"></i></div>
+        <div class="project-body">
+          <div class="project-tags"><span>React</span><span>Firebase</span></div>
+          <h3>Notes App</h3>
+          <p>Full-stack notes app using React and Firebase with real-time sync, create, edit, delete, and search functionality.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="section-header" data-aos="fade-up">
+      <h2>Contact <span>Me</span></h2>
+      <p class="section-sub">Let's work together</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
+        <h3>Get In Touch</h3>
+        <p>Have a project in mind or just want to say hello? Feel free to reach out — I'd love to hear from you!</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><b>Email</b><br/>ky898857@email.com</div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><b>Location</b><br/>India</div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://github.com/khushboo-yadav04" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/khushbooyadav01/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/khus_hbu0418?igsh=ZzdhZGw2a3Azenkw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap" data-aos="fade-left" data-aos-duration="1200">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject"/>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ===== CERTIFICATES ===== -->
+  <section id="certificates">
+    <div class="section-header" data-aos="fade-up">
+      <h2>My <span>Certificates</span></h2>
+      <p class="section-sub">Courses & achievements I've completed</p>
+    </div>
+    <div class="certificates-container">
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="cert-ribbon">Certified</div>
+        <div class="cert-icon"><i class="fa-brands fa-html5"></i></div>
+        <div class="cert-body">
+          <h3>HTML & CSS Fundamentals</h3>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> Coursera</p>
+          <p class="cert-date"><i class="fa-regular fa-calendar"></i> January 2024</p>
+          <p class="cert-desc">Completed a comprehensive course covering modern HTML5 and CSS3 techniques including Flexbox, Grid, and responsive design.</p>
+          <a href="#" class="cert-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="cert-ribbon">Certified</div>
+        <div class="cert-icon cert-icon-2"><i class="fa-brands fa-js"></i></div>
+        <div class="cert-body">
+          <h3>JavaScript Algorithms & Data Structures</h3>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> freeCodeCamp</p>
+          <p class="cert-date"><i class="fa-regular fa-calendar"></i> March 2024</p>
+          <p class="cert-desc">Earned certification by completing 300+ hours of JavaScript challenges covering ES6, OOP, and functional programming.</p>
+          <a href="#" class="cert-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="cert-ribbon">Certified</div>
+        <div class="cert-icon cert-icon-3"><i class="fa-brands fa-react"></i></div>
+        <div class="cert-body">
+          <h3>React — The Complete Guide</h3>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> Udemy</p>
+          <p class="cert-date"><i class="fa-regular fa-calendar"></i> June 2024</p>
+          <p class="cert-desc">Mastered React including Hooks, Context API, Redux, and building full-scale single-page applications from scratch.</p>
+          <a href="#" class="cert-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="cert-ribbon">Certified</div>
+        <div class="cert-icon cert-icon-4"><i class="fa-solid fa-palette"></i></div>
+        <div class="cert-body">
+          <h3>UI/UX Design Essentials</h3>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> Google / Coursera</p>
+          <p class="cert-date"><i class="fa-regular fa-calendar"></i> September 2024</p>
+          <p class="cert-desc">Learned user research, wireframing, prototyping, and visual design principles using Figma and design thinking methodology.</p>
+          <a href="#" class="cert-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="cert-ribbon">Certified</div>
+        <div class="cert-icon cert-icon-5"><i class="fa-brands fa-node-js"></i></div>
+        <div class="cert-body">
+          <h3>Node.js & Express Backend</h3>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> Udemy</p>
+          <p class="cert-date"><i class="fa-regular fa-calendar"></i> November 2024</p>
+          <p class="cert-desc">Built REST APIs with Node.js, Express, and MongoDB covering authentication, middleware, and deployment to production.</p>
+          <a href="#" class="cert-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="cert-ribbon">Certified</div>
+        <div class="cert-icon cert-icon-6"><i class="fa-brands fa-git-alt"></i></div>
+        <div class="cert-body">
+          <h3>Git & GitHub for Developers</h3>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> LinkedIn Learning</p>
+          <p class="cert-date"><i class="fa-regular fa-calendar"></i> December 2024</p>
+          <p class="cert-desc">Covered version control workflows, branching strategies, pull requests, and collaboration using Git and GitHub.</p>
+          <a href="#" class="cert-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 <span>Khushboo Yadav</span>. All Rights Reserved.</p>
+    <p>Made with <i class="fa-solid fa-heart"></i> using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Toast -->
+  <div id="toast"></div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

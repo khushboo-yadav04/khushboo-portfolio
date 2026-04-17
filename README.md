@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-Hi, I'm Khushboo Yadav 👋  
+Hi, I am Khushboo Yadav 
 A passionate BTech CSE student and aspiring developer who loves building clean, user-friendly web applications.
 
 ## 🔗 Live Demo
